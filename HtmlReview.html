@@ -3,51 +3,7 @@
 <head>
   <title>WEB1 - html</title>
   <meta charset="utf-8">
-  <style>
-    a {
-        text-decoration:none;
-    }
-    h1 {
-        font-size: 40px;
-        text-align:center;
-        border-bottom:1px solid gray;
-        padding:20px;
-        margin:0;
-    }
-    ol{
-        border-right:1px solid gray;
-        width:100px;
-        margin:0;
-        padding:20px;
-    }
-    #grid{
-        display:grid;
-        /* 여기서 150px 는 밑에 ol ~ /ol 까지이고, 
-        1fr 은 그 밑에 div ~ /div 를 말한다. 
-        */
-        grid-template-columns: 150px 1fr;
-    }
-    #grid ol{
-      padding-left: 33px;
-    }
-    #article{
-      padding: 25px;
-    }
-    /* 800px 보다 화면이 작아지면 그리드를 없애고 블럭으로 바꿈.
-    + 보더를 모두 없앰.
-    */
-    @media(max-width:800px){
-      #grid{
-        display:block;
-      }
-      ol{
-          border-right:none;
-      }
-      h1 {
-          border-bottom:none;
-      }
-
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1><a href="index.html">WEB</a></h1>
